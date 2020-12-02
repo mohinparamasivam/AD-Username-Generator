@@ -3,10 +3,13 @@
 
 import os
 
+print(" ")
+users_file = input("Userlist path : ")
+file = open(users_file,"r")
 
-file = open("/root/HTB/sauna/users","r")
-
-file_write = open("/root/HTB/sauna/wordlist","a+")
+write_file = input("Write file path : ")
+os.system("rm "+write_file+";touch "+write_file)
+file_write = open(write_file,"a+")
 
 for i in file :
 
@@ -47,3 +50,5 @@ for i in file :
 
 
 '''
+
+print ("Usernames Generated Successfully")
