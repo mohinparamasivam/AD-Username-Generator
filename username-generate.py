@@ -26,12 +26,19 @@ for i in file :
 	lastname_2 = i.split()[1].lower()
 	combined_2 = initial+lastname_2
 	file_write.write(combined_2+"\n")
+	
+	#initial of first name combined with "." complete lastname
+
+	initial = i[0].lower()
+	lastname_3 = i.split()[1].lower()
+	combined_3 = initial+"."+lastname_3
+	file_write.write(combined_3+"\n")
 
 	#combined first 3 characters of firstname and first 3 characters of lastname
-	firstname_3 = i[0:3].lower()
-	lastname_3 = i.split()[1][0:3].lower()
-	combined_3 = firstname_3+lastname_3
-	file_write.write(combined_3+"\n")
+	firstname_4 = i[0:3].lower()
+	lastname_4 = i.split()[1][0:3].lower()
+	combined_4 = firstname_4+lastname_4
+	file_write.write(combined_4+"\n")
 
 '''
 	# combine 3 letters of firstname and 3 random numbers 
