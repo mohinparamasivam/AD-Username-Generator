@@ -31,7 +31,7 @@ for i in file :
 
 	firstname_3 = i.split()[0].lower()
 	lastname_3 = i.split()[1].lower()
-	combined_3 = firstname_3+lastname_3
+	combined_3 = lastname_3+firstname_3
 	file_write.write(combined_3+"\n")
 	
 	
@@ -39,7 +39,7 @@ for i in file :
 
 	firstname_4 = i.split()[0].lower()
 	lastname_4 = i.split()[1].lower()
-	combined_4 = firstname_4+"."+lastname_4
+	combined_4 = lastname_4+"."+firstname_4
 	file_write.write(combined_4+"\n")
 	
 
@@ -47,7 +47,7 @@ for i in file :
 
 	initial = i[0].lower()
 	lastname_5 = i.split()[1].lower()
-	combined_6 = initial+lastname_5
+	combined_5 = initial+lastname_5
 	file_write.write(combined_5+"\n")
 	
 	#initial of first name combined with "." complete lastname
