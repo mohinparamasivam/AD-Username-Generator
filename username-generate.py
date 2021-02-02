@@ -64,6 +64,30 @@ for i in file :
 	file_write.write(combined_7+"\n")
 	
 	
+	#combine first and "-" lastname lowercase
+
+	firstname_8 = i.split()[0].lower()
+	lastname_8 = i.split()[1].lower()
+	combined_8 = firstname_8+"-"+lastname_8
+	file_write.write(combined_8+"\n")
+	
+	#combine lastname and "-" firstname lowercase
+
+	firstname_9 = i.split()[0].lower()
+	lastname_9 = i.split()[1].lower()
+	combined_9 = lastname_9+"."+firstname_9
+	file_write.write(combined_9+"\n")
+	
+	#initial of first name combined with "-" complete lastname
+
+	initial = i[0].lower()
+	lastname_10 = i.split()[1].lower()
+	combined_10 = initial+"-"+lastname_10
+	file_write.write(combined_10+"\n")
+
+	
+	
+	
 
 '''
 	# combine 3 letters of firstname and 3 random numbers 
