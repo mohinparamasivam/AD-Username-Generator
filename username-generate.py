@@ -1,13 +1,24 @@
 
 #!/usr/bin/python3
 
-import os
+import os,argparse,sys
+
+parser = argparse.ArgumentParser(description='AD Usernames Generator')
+parser.add_argument('-u',help='UserList Path')
+parser.add_argument('-o',help='Output Filename')
+args = parser.parse_args()
+
+
+users_file = args.u
+write_file = args.o
+
+if len(sys.argv)==1:
+    parser.print_help(sys.stderr)
+    sys.exit(1)
+args=parser.parse_args()
 
 print(" ")
-users_file = input("Userlist path : ")
 file = open(users_file,"r")
-
-write_file = input("Write file path : ")
 os.system("rm "+write_file+";touch "+write_file)
 file_write = open(write_file,"a+")
 
