@@ -97,6 +97,12 @@ for i in file :
 	file_write.write(combined_10+"\n")
 
 	
+	#initial of first name (uppercase) combined with lastname initial uppercase
+
+	initial = i[0].upper()
+	lastname_11 = i.split()[1]
+	combined_11 = initial+lastname_11
+	file_write.write(combined_11+"\n")
 	
 	
 
